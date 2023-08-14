@@ -1,0 +1,99 @@
+body {
+  font-family: sans-serif;
+  background-image: url("background.png");
+}
+
+.App {
+  max-width: 950px;
+ 
+  margin: 0 auto;
+}
+
+.App h1 {
+  font-size: 3rem;
+  margin: 1rem 0 0 2rem;
+  color: #ffffff;
+}
+
+.App p {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper label {
+  display: inline-block;
+  padding: 8px 12px;
+  cursor: pointer;
+  border: 2px solid white;
+  border-radius: 20px;
+  background-color: black;
+  color: #fff; 
+  
+}
+
+.input-wrapper input[type="file"] {
+  position: absolute;
+  left: 28px;
+  top: 6px;
+  z-index: -1;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.result {
+  margin-top: 4rem;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.result .box-image {
+  background: rgb(0, 0, 0);
+  height: 100%;
+  padding: 1rem;
+  border: 2px solid white;
+  border-radius: 25px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.result .box-p {
+  background: #000000;
+  margin-top: 5rem;
+  height: 100%;
+  padding: 1rem;
+  border: 2px solid white;
+  border-radius: 25px;;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.result img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.result p {
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
+@media (min-width: 1000px) {
+  .App h1 {
+    font-size: 5rem;
+    margin: 1rem 0 0 5rem;
+  }
+  .result {
+    grid-template-columns: 1fr 1fr;
+  }
+  .result .box-p {
+    margin-left: 5rem;
+    margin-top: 0rem;
+  }
+
+}
